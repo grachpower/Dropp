@@ -375,10 +375,13 @@ a {
 
 .icon-pen {
   background-image: url(../images/services/icon-pen.png); }
-, 0, 0); }
-  20% {
-    -webkit-transform: rotate(0deg) translate3d(150%, 150%, 0);
-    transform: rotate(0deg) translate3d(150%, 150%, 0); }
+
+p {
+  margin-bottom: 2rem;
+  line-height: 1; }
+  p:last-of-type {
+    margin-bottom: 0; }
+sform: rotate(0deg) translate3d(150%, 150%, 0); }
   80% {
     -webkit-transform: rotate(360deg) translate3d(150%, 150%, 0);
     transform: rotate(360deg) translate3d(150%, 150%, 0); }
@@ -508,3 +511,9 @@ a {
 
 .icon-pen {
   background-image: url(../images/services/icon-pen.png); }
+
+p {
+  margin-bottom: 2rem;
+  line-height: 1; }
+  p:last-of-type {
+    margin-bottom: 0; }
