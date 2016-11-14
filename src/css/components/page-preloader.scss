@@ -70,45 +70,45 @@
 
 @keyframes orbit-top-right {
     0% {
-        transform: rotate3d(1, 0, 0, 0deg) translate3d(0, 0, 0);
+        transform: rotate3d(1, 1, 0, 0deg) translate3d(0, 0, 0);
     }
     20% {
-        transform: rotate3d(1, 0, 0, 0deg) translate3d(150%, -150%, 0);
+        transform: rotate3d(1, 1, 0, 0deg) translate3d(150%, -150%, 0);
     }
     80% {
-        transform: rotate3d(1, 0, 0, 360deg) translate3d(150%, -150%, 0);
+        transform: rotate3d(1, 1, 0, 360deg) translate3d(150%, -150%, 0);
     }
     100% {
-        transform: rotate3d(1, 0, 0, 360deg) translate3d(0, 0, 0);
+        transform: rotate3d(1, 1, 0, 360deg) translate3d(0, 0, 0);
     }
 }
 
 @keyframes orbit-down-left {
     0% {
-        transform: rotate3d(1, 0, 0, 0deg) translate3d(0, 0, 0);
+        transform: rotate3d(1, 1, 0, 0deg) translate3d(0, 0, 0);
     }
     20% {
-        transform: rotate3d(1, 0, 0, 0deg) translate3d(-150%, -150%, 0);
+        transform: rotate3d(1, 1, 0, 0deg) translate3d(-150%, -150%, 0);
     }
     80% {
-        transform: rotate3d(1, 0, 0, 360deg) translate3d(-150%, -150%, 0);
+        transform: rotate3d(1, 1, 0, 360deg) translate3d(-150%, -150%, 0);
     }
     100% {
-        transform: rotate3d(1, 0, 0, 360deg) translate3d(0, 0, 0);
+        transform: rotate3d(1, 1, 0, 360deg) translate3d(0, 0, 0);
     }
 }
 
 @keyframes orbit-down-right {
     0% {
-        transform: rotate3d(1, 0, 0, 0deg) translate3d(0, 0, 0);
+        transform: rotate3d(1, 1, 0, 0deg) translate3d(0, 0, 0);
     }
     20% {
-        transform: rotate3d(1, 0, 0, 0deg) translate3d(-150%, 150%, 0);
+        transform: rotate3d(1, 1, 0, 0deg) translate3d(-150%, 150%, 0);
     }
     80% {
-        transform: rotate3d(1, 0, 0, 360deg) translate3d(-150%, 150%, 0);
+        transform: rotate3d(1, 1, 0, 360deg) translate3d(-150%, 150%, 0);
     }
     100% {
-        transform: rotate3d(1, 0, 0, 360deg) translate3d(0, 0, 0);
+        transform: rotate3d(1, 1, 0, 360deg) translate3d(0, 0, 0);
     }
 }
