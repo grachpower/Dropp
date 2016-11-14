@@ -1,0 +1,132 @@
+.menu__item {
+    display: inline-block;
+}
+
+.menu__link {
+    display: inline-block;
+    color: #565656;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    transition: all 0.4s linear 0s;
+    outline: none;
+
+    &:hover, &:focus {
+        background-color: #808080;
+        color: #fff;
+    }
+}
+
+.menu__link_active {
+    background-color: $color-orange;
+    color: #fff;
+}
+
+.hamburger__checkbox {
+    display: none;
+}
+
+.hamburger__label {
+    display: none;
+    height: 1rem;
+    width: 2.5rem;
+    position: relative;
+    background-color: transparent;
+    border-bottom: .5rem solid;
+    border-top: .5rem solid;
+    border-color: $color-orange;
+    transition: border-color .6s ease .7s;
+
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        width: 100%;
+        border-top: .5rem solid;
+        border-color: $color-orange;
+        transition: transform .7s ease 0s;
+    }
+
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        width: 100%;
+        border-top: .5rem solid;
+        border-color: $color-orange;
+        transition: transform .7s ease 0s;
+    }
+}
+
+.hamburger__checkbox:checked + .hamburger__label {
+    border-color: transparent;
+
+    &:before {
+        transform: rotate(135deg);
+        border-color: #fff;
+    }
+
+    &:after {
+        transform: rotate(-135deg);
+        border-color: #fff;
+    }
+    z-index: 3;
+}
+
+.hamburger__checkbox:checked ~ .menu__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: $color-orange;
+    z-index: 2;
+}
+
+@media screen and (max-width: 640px) {
+    .hamburger__label {
+        display: block;
+    }
+
+    .menu__list {
+        display: none;
+    }
+
+    .menu__item {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+        margin-right: 0;
+        margin-top: 1rem;
+    }
+
+    .menu__link {
+        color: #fff;
+        display: block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 3rem;
+        border-bottom: 1px solid #fff;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        &:last-of-type {
+            border-bottom: 0;
+        }
+
+        &:hover, &:focus {
+            background-color: #fff;
+            color: $color-orange;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.services__content {
+    padding-bottom: 7.5rem;
+    padding-top: 6.3rem;
+}
+
+.service {
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 27%;
+}
+
+.service__title {
+    margin-top: 3.2rem;
+    font-size: 2.5rem;
+}
+
+.service__description {
+    margin-top: 3rem;
+}
+
+.service__icon {
+    display: inline-block;
+    width: 17rem;
+    height: 17rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 640px) {
+    .service {
+        width: 100%;
+        margin-bottom: 7rem;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    .service__title {
+        margin-top: 2rem;
+    }
+
+    .service__description {
+        margin-top: 2rem;
+    }
+}

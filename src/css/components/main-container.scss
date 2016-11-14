@@ -1,0 +1,18 @@
+.main-container {
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: 1170px;
+    min-width: 300px;
+}
+
+.main-container_space-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-container_space-around-wrap {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

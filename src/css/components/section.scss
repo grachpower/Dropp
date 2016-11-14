@@ -1,0 +1,15 @@
+.section {
+    border-bottom: 1px solid #000;
+}
+
+.section__title {
+    padding-top: 3.3rem;
+    padding-bottom: 2.5rem;
+    font-size: 2.7rem;
+    text-align: center;
+    color: $color-orange;
+}
+
+.section__content {
+    border-top: 1px solid #000;
+}

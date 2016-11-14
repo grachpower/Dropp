@@ -1,0 +1,19 @@
+.button {
+    display: inline-block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background-color: $color-orange;
+    color: #fff;
+    border-radius: .6rem;
+    font-family: Oswald;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5) 0 -2px 4px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s linear 0s;
+    outline: none;
+    cursor: pointer;
+
+    &:hover, &:focus {
+        background-color: #808080;
+    }
+}

@@ -1,0 +1,41 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 11.5rem;
+    background-image: url("../images/banner_desktop.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.home__content {
+    text-align: center;
+}
+
+.home__caption {
+    color: #fff;
+    text-align: center;
+    font-family: Bebas;
+    font-size: 8.6rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+.home__button {
+    font-size: 2.7rem;
+}
+
+@media screen and (max-width: 640px) {
+    .home {
+        background-image: url("../images/banner_mobile.png");
+    }
+
+    .home__caption {
+        font-size: 6rem;
+    }
+}

@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+@media screen and (max-width: 960px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1.6rem;
+}
+
+@import 'settings.scss';
+@import 'helpers.scss';
+@import 'components/components.scss';
+@import 'layout/layout.scss';
+@import 'typographics/typographics.scss';
