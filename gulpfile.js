@@ -71,7 +71,7 @@ gulp.task('htmlmin', function() {
 gulp.task('img', function() {
     return gulp.src('src/images/**/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('dist/img/'));
+        .pipe(gulp.dest('dist/images/'));
 });
 
 gulp.task('clean', function() {
