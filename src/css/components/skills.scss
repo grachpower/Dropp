@@ -1,0 +1,46 @@
+.skills {
+    width: 50%;
+}
+
+.skills__title {
+    font-size: 2rem;
+}
+
+.skills__content {
+    margin-top: 4.7rem;
+}
+
+.skill {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+
+    &:first-of-type {
+        margin-top: 0;
+    }
+}
+
+.skill__status {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill__progress {
+    -webkit-appearance: progress-bar;
+    width: 80%;
+    background-color: $color-orange;
+    height: 1rem;
+}
+
+progress::-webkit-progress-bar { background: $color-orange; }
+progress::-webkit-progress-value { background: #fff; }
+progress::-moz-progress-bar { background: #fff; }
+
+@media screen and (max-width: 640px) {
+    .skills {
+        margin-top: 5rem;
+        width: 100%;
+    }
+}

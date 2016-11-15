@@ -1,0 +1,17 @@
+.resume {
+    width: 46%;
+}
+
+.resume__title {
+    font-size: 2rem;
+}
+
+.resume__content {
+    margin-top: 4.7rem;
+}
+
+@media screen and (max-width: 640px) {
+    .resume {
+        width: 100%;
+    }
+}

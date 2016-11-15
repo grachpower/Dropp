@@ -1,0 +1,25 @@
+.socials {
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.social {
+    display: inline-block;
+    margin-left: 2rem;
+
+    &:first-of-type {
+        margin-left: 0;
+    }
+
+    &:hover, &:focus {
+        opacity: 0.5;
+    }
+}
+
+.social__icon {
+    display: inline-block;
+    width: 2.6rem;
+    height: 2.6rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

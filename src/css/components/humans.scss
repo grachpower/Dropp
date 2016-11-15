@@ -1,0 +1,115 @@
+.humans {
+    display: flex;
+    justify-content: space-around;
+}
+
+.humans__about {
+    margin-top: 6.5rem;
+}
+
+.human {
+    width: 20%;
+}
+
+.human__label {
+    display: inline-block;
+
+    &:hover, &:focus {
+        opacity: 0.7;
+    }
+}
+
+.human__radio {
+    display: none;
+}
+
+.humans__about {
+    background-color: $color-orange;
+    color: #fff;
+    padding-top: 6.5rem;
+    padding-bottom: 4.5rem;
+    position: relative;
+}
+
+.human__about {
+    display: block;
+}
+
+.human__about__inner {
+    display: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.human__radio:checked + .human__about__inner {
+    display: flex;
+    animation-name: show-about;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+}
+
+.human__pointers {
+    position: absolute;
+    box-sizing: border-box;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 0 1rem;
+    max-width: 1170px;
+    min-width: 300px;
+    top: 0;
+    width: 100%;
+}
+
+.human__pointer {
+    width: 25%;
+    position: absolute;
+
+    &:before {
+        position: absolute;
+        content: "";
+        display: block;
+        border-style: solid;
+        border-left-width: 1.5rem;
+        border-left-color: transparent;
+        border-right-width: 1.5rem;
+        border-right-color: transparent;
+        border-top-width: 3rem;
+        border-top-color: #fff;
+        border-bottom: 0;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+
+.human__pointer_1 {
+    left: 0;
+}
+
+.human__pointer_2 {
+    left:25%;
+}
+
+.human__pointer_3 {
+    left:50%;
+}
+
+.human__pointer_4 {
+    left:75%;
+}
+
+@media screen and (max-width: 640px) {
+    .humans__about {
+        margin-top: 3.5rem;
+    }
+}
+
+@keyframes show-about {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

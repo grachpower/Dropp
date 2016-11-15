@@ -1,0 +1,29 @@
+.project {
+    display: block;
+    font-size: 0;
+    width: 16.66%;
+    overflow: hidden;
+    outline: none;
+
+    &:hover, &:focus {
+        opacity: 0.5;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .project {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .project {
+        width: 33.3%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project {
+        width: 50%;
+    }
+}
